@@ -2,9 +2,12 @@ package ru.gb.krasnoperov.homework6;
 
 public class Cat extends Animals{
 
+    protected static int cat_count = 0;
+
     public Cat(String name) {
         super(name);
         count++;
+        cat_count++;
     }
 
     @Override

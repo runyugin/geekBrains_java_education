@@ -2,9 +2,12 @@ package ru.gb.krasnoperov.homework6;
 
 public class Dog extends Animals{
 
+    protected static int dog_count = 0;
+
     public Dog(String name) {
         super(name);
         count++;
+        dog_count++;
     }
 
     @Override

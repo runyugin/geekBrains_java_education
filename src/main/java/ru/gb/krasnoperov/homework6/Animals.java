@@ -3,7 +3,7 @@ package ru.gb.krasnoperov.homework6;
 public abstract class Animals {
 
     private String name;
-    public static int count = 0;
+    protected static int count = 0;
 
     public Animals(String name) {
         this.name = name;
