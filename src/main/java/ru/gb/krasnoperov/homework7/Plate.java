@@ -34,7 +34,9 @@ public class Plate {
 
 
     public void addFood(int addfood) {
-        this.food += addfood;
+        if(addfood>=0) {
+            this.food += addfood;
+        }
     }
 
 
