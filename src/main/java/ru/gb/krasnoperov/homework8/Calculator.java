@@ -15,7 +15,9 @@ public class Calculator extends JFrame {
         new Calculator();
     }
 
+
     public Calculator(){
+
         setTitle("Calculator");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(300,300,400,400);
@@ -39,6 +41,8 @@ public class Calculator extends JFrame {
                 if ("0".equals(displayText)&&!".".equals(text)){
                     displayText="";
                 }
+
+
 
                 if ("-/+".equals(text)){
                     if (display.getText().contains(".")){
@@ -64,9 +68,6 @@ public class Calculator extends JFrame {
             button.addActionListener(numberListener);
             numberPanel.add(button);
         }
-
-
-
 
         JButton pointButton = new JButton(".");
         pointButton.addActionListener(numberListener);
@@ -111,6 +112,7 @@ public class Calculator extends JFrame {
                         leftOperand=Double.parseDouble(display.getText());
                         operation=null;
                     }
+
                     return;
                 }
 
